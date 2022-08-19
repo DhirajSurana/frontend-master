@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*  Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background:hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1rem 0 1rem;
+} 
+
+p{
+    line-height:2;
+}
+
+h1, .price{
+    font-family: 'fraunces', sans-serif;
+}
+ 
+h1{
+    color:hsl(212, 21%, 14%);
+    margin-bottom: 1.5rem;
+}
+
+.price{
+    color:hsl(158, 36%, 37%);
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container h1{
+    font-size: 2rem;
+}
+
+h2{
+   text-transform: uppercase;
+   font-size: 1rem;
+   font-weight: 500;
+   color:hsl(228, 12%, 48%);
+   margin-bottom: 1rem;
+   margin-top: 0.75rem;
+   letter-spacing: 0.3rem;
+}
+
+.container article:first-child img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.container article:last-child{
+    background-color: #fff;
+    padding:1rem ;
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -1rem;
+}
+
+p{
+    font-size: 16px;
+}
+.container{
+    max-width: 600px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:1rem 0 1.5rem 0;
+    list-style: none;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+    color:hsl(158, 36%, 37%);
+    margin: 0 1rem 0rem 0;
+}
+
+.btn:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+.btn-logo{
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 640px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container article:first-child img {
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+    .container article:last-child{
+        border-radius: 0%;
+        margin-top: 0;
+        border-radius: 0 1rem 1rem 0;
+    }
+    picture img{
+        height: 100%;
+    }
+}
